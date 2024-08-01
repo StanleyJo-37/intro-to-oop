@@ -7,6 +7,7 @@ public class Calculator {
 	}
 	
 	public static int calculate(String eq) throws Exception {
+		if (eq.equals("e")) return Integer.MAX_VALUE;
 		int[] arr = new int[2];
 		char method = ' ';
 		int j = 0;
