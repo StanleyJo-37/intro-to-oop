@@ -55,20 +55,20 @@ public class Arrays {
 			long tmpVec = vec();
 				
 //			Uncomment for individuals iter elapsed item.
-//			System.out.printf("Iter-%d\n", i+1);
-//			System.out.printf("Array: %d\n", tmpArr);
-//			System.out.printf("ArrayList: %d\n", tmpArrList);
-//			System.out.printf("Vector: %d\n\n\n", tmpVec);
+//			System.out.printf("Iter-%d:\n", i+1);
+//			System.out.printf("Array: %d ms.\n", tmpArr);
+//			System.out.printf("ArrayList: %d ms.\n", tmpArrList);
+//			System.out.printf("Vector: %d ms.\n\n\n", tmpVec);
 			
 			totalArr += tmpArr;
 			totalArrList += tmpArrList;
 			totalVec += tmpVec;
 		}
 		
-		System.out.printf("Average %d addition(s) elapsed time in %d iterations\n", SIZE, iter);
-		System.out.printf("Array: %f\n", ((float)totalArr / (float)iter));
-		System.out.printf("ArrayList: %f\n", ((float)totalArrList / (float)iter));
-		System.out.printf("Vector: %f\n\n\n", ((float)totalVec / (float)iter));
+		System.out.printf("Average %d addition(s) elapsed time in %d iterations:\n", SIZE, iter);
+		System.out.printf("Array: %f ms.\n", ((float)totalArr / (float)iter));
+		System.out.printf("ArrayList: %f ms.\n", ((float)totalArrList / (float)iter));
+		System.out.printf("Vector: %f ms.\n\n\n", ((float)totalVec / (float)iter));
 	}
 
 }
