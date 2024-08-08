@@ -1,0 +1,5 @@
+package core.personnel.person;
+
+public class Author {
+
+}
